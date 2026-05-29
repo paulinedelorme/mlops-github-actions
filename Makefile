@@ -15,7 +15,7 @@ format:
 type-check:
 	uv run mypy src tests
 
-check: lint test
+check: lint type-check test
 
 clean:
 	rm -rf .pytest_cache .ruff_cache .mypy_cache htmlcov .coverage
